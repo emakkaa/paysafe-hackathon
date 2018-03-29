@@ -1,0 +1,20 @@
+@import "colors";
+
+.btn.fb {
+  background-color: $btn-fb;
+}
+.btn.go {
+  background-color: $btn-go;
+}
+.btn.fb:hover {
+  background-color: $btn-fb-hover;
+}
+.btn.go:hover {
+  background-color: $btn-go-hover;
+}
+
+@media (max-width: 480px) {
+  .btn.em {
+    margin-top: 0;
+  }
+}

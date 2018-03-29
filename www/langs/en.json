@@ -1,0 +1,113 @@
+{
+  "application": {
+    "title": "Cents",
+    "sub_title": "Save money, log spendings, get rewarded",
+    "loading": "Loading...",
+    "close": "Close",
+    "error": "Error",
+    "try_again": "Error connecting to the server, please try again later",
+    "ok_button": "OK",
+    "cancel_button": "Cancel",
+    "delete_button": "Delete",
+    "or": "or",
+    "offline": "You are offline.",
+    "search_placeholder": "Search here...",
+    "pull_to_refresh": "Pull to refresh...",
+    "dollar_sign": "$",
+    "something_went_wrong": "Something went wrong, please try again.",
+    "errors": {
+      "general": "Something went wrong, please try again."
+    }
+  },
+  "errors": {
+    "credentials_not_unique": "Credentials are not unique.",
+    "terms_agree": "You must agree terms of use to continue.",
+    "wrong_credentials": "Wrong credentials.",
+    "passwords_match": "Passwords should match.",
+    "password_lenght": "Password should be between 6 and 20 symbols.",
+    "email_format": "Email has bad format.",
+    "qr_code_wrong_format": "Not a Cents QR code",
+    "missing": {
+      "email": "Email is missing",
+      "password": "Password is missing",
+      "first_name": "First Name is missing",
+      "last_name": "Last Name is missing",
+      "phone": "Phone is missing",
+      "birthday": "Birthday is missing",
+      "gender": "Gender is missing",
+      "password": "Password is missing",
+      "password_confirmed": "Confirmed password is missing",
+      "confirmation_code": "Confirmation code is missing"
+    }
+  },
+  "home": {
+    "email": "Sign up with Email",
+    "facebook": "Connect with Facebook",
+    "google": "Connect with Google",
+    "signin_text": "Already have an account?",
+    "signin_link": "Sign In"
+  },
+  "signup":{
+    "date_birth": "Date of birth",
+    "select_gender": "Select gender",
+    "i_agree": "I agree with Cents",
+    "terms": "Terms of Use and Privacy Policy",
+    "signup": "Sign up"
+  },
+  "account_confirmation":{
+    "resend_code": "Resend code",
+    "info": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "activate": "Activate"
+  },
+  "change_password":{
+    "info": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "activate": "Activate",
+    "resend_code": "Resend code"
+  },
+  "forgotten_password":{
+    "forgotten_password": "Forgotten password",
+    "enter_email": "Enter email for reset",
+    "info": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "send": "Send"
+  },
+  "login": {
+    "sign_in": "Sign in",
+    "signup_text": "Do not have an account?",
+    "signup_link": "Sign Up",
+    "forgot_password_text": "Forgot password?",
+    "forgotten_password_link": "Click here"
+  },
+  "coupons": {
+    "no_coupons_found": "No coupons found!",
+    "coupons_title": "My Rewards",
+    "view": "View"
+  },
+  "stores": {
+    "stores_title": "CAMPAGINS",
+    "no_stores_found": "No stores found!",
+    "rewards_title": "REWARDS",
+    "no_rewards_found": "No rewards found!"
+  },
+  "receipts":{
+    "search_here": "Search here...",
+    "date_format": "yyyy-MM-dd"
+  },
+  "receipt":{
+    "total": "TOTAL",
+    "tax": "TAX",
+    "cents": "CENTS"
+  },
+  "dashboard": {
+    "receipts": "Receipts",
+    "withdraw": "Withdraw",
+    "saved": "Saved",
+    "trophy" : {
+      "until" : "until",
+      "you_saved": "You've Saved:",
+      "savings_trophy": "Savings Trophy"
+    }
+  },
+  "rewards": {
+    "no_campaings_available": "No campaigns available"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "cents",
+  "version": "1.1.1",
+  "description": "cents: An Ionic project",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.4",
+    "bower": "^1.3.3",
+    "gulp": "^3.9.1",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-lintspaces": "^0.5.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^2.2.14",
+    "htmlhint-stylish": "^1.0.3",
+    "jasmine": "^2.5.3",
+    "jshint": "^2.9.4",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^1.1.0",
+    "node-sass": "^2.1.1",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": []
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:layout_gravity="center_vertical"
+
+    android:background="#ff0000">
+
+  <com.develop_soft.scannerandroid.CameraSourcePreview
+      android:id="@+id/preview"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginBottom="0dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginRight="0dp"
+      android:layout_marginTop="0dp">
+
+  </com.develop_soft.scannerandroid.CameraSourcePreview>
+
+  <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginBottom="30dp">
+        <ImageView
+            android:id="@+id/centerFrame"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/center_frame"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/imageViewLogo"
+      android:layout_width="83dp"
+      android:layout_height="37dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="30dp"
+      android:src="@drawable/logo" />
+
+  <Button
+      android:id="@+id/btnFlash"
+      android:layout_width="36dp"
+      android:layout_height="36dp"
+      android:layout_alignParentEnd="true"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/icon_flash" />
+
+  <Button
+      android:id="@+id/btnBank"
+      android:layout_width="44dp"
+      android:layout_height="44dp"
+      android:layout_alignBottom="@+id/btnRewards"
+      android:layout_marginBottom="6dp"
+      android:layout_marginEnd="30dp"
+      android:layout_marginLeft="20dp"
+      android:layout_toStartOf="@+id/btnBigGreen"
+      android:background="@drawable/icon_bank" />
+
+  <Button
+      android:id="@+id/btnRewards"
+      android:layout_width="56dp"
+      android:layout_height="56dp"
+      android:layout_alignBottom="@+id/btnBigGreen"
+      android:layout_alignParentRight="false"
+      android:layout_marginBottom="0dp"
+      android:layout_marginLeft="30dp"
+      android:layout_toRightOf="@+id/btnBigGreen"
+      android:background="@drawable/icon_rewards" />
+
+  <Button
+      android:id="@+id/btnBigGreen"
+      android:layout_width="107dp"
+      android:layout_height="114dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="0dp"
+      android:background="@drawable/button_green" />
+
+
+</RelativeLayout>

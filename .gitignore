@@ -1,0 +1,11 @@
+*
+!*/
+!*.*
+*.cmd
+/node_modules
+.idea
+/plugins
+/www/build
+/www/lib
+/www/www.zip
+/tests

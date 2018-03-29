@@ -1,0 +1,19 @@
+{
+  "name": "cents",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.3",
+    "angular-translate": "^2.14.0"
+  },
+  "dependencies": {
+    "angular-route": "1.5.3",
+    "angular-ui-router": "0.2.14",
+    "angular-mocks": "1.5.3",
+    "ngCordova": "^0.1.23",
+    "facebook-connect-plugin": "https://github.com/Wizcorp/phonegap-facebook-plugin/blob/master/platforms/browser/www/phonegap/plugin/facebookConnectPlugin/facebookConnectPlugin.js",
+    "ionic-datepicker": "^1.2.1",
+    "ng-cordova-oauth": "^0.3.0",
+    "angular-jwt": "^0.1.9",
+    "angular-translate-loader-static-files": "^2.14.0"
+  }
+}

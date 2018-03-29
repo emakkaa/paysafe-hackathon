@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.cents.plugin.barcode.scanner"
+        version="1.0.0">
+
+  <name>Cents Barcode Scanner</name>
+  <description>A Cordova plugin that scans barcode</description>
+
+  <engines>
+    <engine name="cordova" version=">=6.3.0" />
+  </engines>
+
+  <js-module src="www/barcode-scanner.js" name="BarcodeScanner">
+    <clobbers target="BarcodeScanner" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="BarcodeScanner">
+        <param name="android-package" value="com.cents.plugin.barcode.scanner.BarcodeScanner" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-feature android:name="android.hardware.camera" />
+      <uses-feature android:name="android.hardware.camera.autofocus" />
+      <uses-permission android:name="android.permission.CAMERA" />
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <activity android:name="com.develop_soft.scannerandroid.BarcodeCaptureActivity"
+          android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+      </activity>    
+    </config-file>
+
+
+  <framework src="com.google.android.gms:play-services:10.2.0" />
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    <source-file src="src/android/BarcodeScanner.java" target-dir="src/com/cents/plugin/barcode/scanner" />
+    <source-file src="src/android/BarcodeCaptureActivity.java" target-dir="src/com/develop_soft/scannerandroid" />
+    <source-file src="src/android/BarcodeTrackerFactory.java" target-dir="src/com/develop_soft/scannerandroid" />
+    <source-file src="src/android/IBarcodeResult.java" target-dir="src/com/develop_soft/scannerandroid" />
+    <source-file src="src/android/camera/CameraSource.java" target-dir="src/com/develop_soft/scannerandroid/camera" />
+    <source-file src="src/android/camera/CameraSourcePreview.java" target-dir="src/com/develop_soft/scannerandroid/camera" />
+
+    <resource-file src="src/android/res/drawable/button_green.png" target="res/drawable/button_green.png" />
+    <resource-file src="src/android/res/drawable/center_frame.png" target="res/drawable/center_frame.png" />
+    <resource-file src="src/android/res/drawable/icon_bank.png" target="res/drawable/icon_bank.png" />
+    <resource-file src="src/android/res/drawable/icon_flash.png" target="res/drawable/icon_flash.png" />
+    <resource-file src="src/android/res/drawable/icon_rewards.png" target="res/drawable/icon_rewards.png" />
+    <resource-file src="src/android/res/drawable/logo.png" target="res/drawable/logo.png" />
+    <resource-file src="src/android/res/layout/barcode_capture.xml" target="res/layout/barcode_capture.xml" />
+
+  </platform>
+
+  <!-- ios -->
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="BarcodeScanner">
+        <param name="ios-package" value="BarcodeScanner" />
+      </feature>
+    </config-file>
+    
+    <header-file src="src/ios/BarcodeScanner.h" />
+    <source-file src="src/ios/BarcodeScanner.m" />
+    <header-file src="src/ios/ScanViewController.h" />
+    <source-file src="src/ios/ScanViewController.m" />
+    <resource-file src="src/ios/ScanViewController.xib" />
+    
+    <resource-file src="src/ios/Images.xcassets" />
+    
+    <framework src="ImageIO.framework" weak="true" />
+    <framework src="CoreLocation.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="AssetsLibrary.framework" />
+    <framework src="MobileCoreServices.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="AVFoundation.framework" />
+    
+    <preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
+    <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+        <string>Scanning QR codes</string>
+    </config-file>
+  </platform>
+
+</plugin>

@@ -1,0 +1,4 @@
+1. Generate certificate: 
+  keytool -genkey -alias centstest -keyalg RSA -keystore /path_where_to_create_file
+2. Get SHA1: 
+  keytool -list -v -keystore ~/work/payWithCentsMobile/cents2.txt
